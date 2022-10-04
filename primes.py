@@ -9,11 +9,12 @@ def primes(number_of_primes):
 
     if(number_of_primes>0):
         list.append(2)
-        
+
         value = 3
         while(len(list) < number_of_primes):
             for num in  list :
                 if(value % num == 0):
                     break
                 list.append(value)
+            value += 1
     return list
